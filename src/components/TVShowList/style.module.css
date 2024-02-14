@@ -1,0 +1,40 @@
+.title{
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.list:hover{
+    overflow-x: overlay;
+}
+
+.list{
+    display:flex;
+    width: calc(100vw - 25px);
+    overflow-x: auto; 
+    padding-bottom: 10px;
+}
+
+.tv_show_item{
+    margin-right: 20px;
+}
+
+/* This is for Chrome, Safari and Opera */
+.list::-webkit-scrollbar {
+    width: 10px; /* specify width of scrollbar */
+}
+
+.list::-webkit-scrollbar-track {
+    background: transparent; /* color of the tracking area */
+}
+
+.list::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 10px; /* color of the scroll thumb */
+}
+
+/* This is for Firefox */
+.list{
+    scrollbar-width: thin;
+    scrollbar-color: darkgrey transparent; /* scroll thumb and track color */
+}
